@@ -1,0 +1,12 @@
+﻿version: '3.3'
+
+services:
+  basic_ci_cd:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: basic_ci_cd
+    ports:
+      - 5001:5001
+    environment:
+      - ASPNETCORE_URLS=http://+:5001
