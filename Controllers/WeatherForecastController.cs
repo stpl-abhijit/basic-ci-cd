@@ -26,6 +26,7 @@ namespace basic_ci_cd.Controllers
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                //Just check ci cd
             })
             .ToArray();
         }
