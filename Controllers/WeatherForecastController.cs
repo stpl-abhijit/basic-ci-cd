@@ -32,17 +32,10 @@ namespace basic_ci_cd.Controllers
         }
 
 
-        [HttpGet(Name = "NewOne")]
-        public IEnumerable<WeatherForecast> NewOne()
+        [HttpGet("test-data")]
+        public IActionResult DataRetrive()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-                //Just check ci cd
-            })
-            .ToArray();
+            return Ok("returndata");
         }
     }
 }
