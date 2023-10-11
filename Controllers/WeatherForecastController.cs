@@ -49,5 +49,10 @@ namespace basic_ci_cd.Controllers
         {
             return Ok("VijaySirTest");
         }
+        [HttpGet("another-one-implementation")]
+        public IActionResult Another()
+        {
+            return Ok("another-one-implementation");
+        }
     }
 }
