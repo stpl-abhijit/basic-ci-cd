@@ -43,5 +43,11 @@ namespace basic_ci_cd.Controllers
         {
             return Ok("NewDataOne");
         }
+
+        [HttpGet("vijay-sir-test")]
+        public IActionResult VijaySirTest()
+        {
+            return Ok("VijaySirTest");
+        }
     }
 }
