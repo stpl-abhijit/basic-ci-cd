@@ -37,7 +37,13 @@ namespace basic_ci_cd.Controllers
         {
             return Ok("returndata");
         }
-
+        
+        [HttpGet("test-data-push1")]
+        public IActionResult DataRetrive1()
+        {
+            return Ok("returndata");
+        }
+        
         [HttpGet("new-data-one")]
         public IActionResult NewDataOne()
         {
